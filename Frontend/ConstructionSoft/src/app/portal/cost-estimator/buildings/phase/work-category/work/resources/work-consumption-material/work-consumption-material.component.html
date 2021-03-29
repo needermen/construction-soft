@@ -1,0 +1,6 @@
+<app-crud [crudService]="service" [cols]="cols"
+          [detailTitle]="'მასალის დამატება/რედაქტირება'"
+          [title]="'სახარჯი მასალები'"
+          [tableSummaryInfo]="summary"
+          (itemUpdateCompleted)="itemUpdated.emit()">
+</app-crud>

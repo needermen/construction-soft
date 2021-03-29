@@ -1,0 +1,6 @@
+<app-crud [crudService]="service" [cols]="cols"
+          [detailTitle]="'ტექნიკის დამატება/რედაქტირება'"
+          [title]="'ტექნიკა'"
+          [tableSummaryInfo]="summary"
+          (itemUpdateCompleted)="itemUpdated.emit()">
+</app-crud>

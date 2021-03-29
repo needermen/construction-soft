@@ -1,0 +1,6 @@
+<app-crud [crudService]="service" [cols]="cols"
+          [detailTitle]="'მუშახელის დამატება/რედაქტირება'"
+          [title]="'მუშახელი'"
+          [tableSummaryInfo]="summary"
+          (itemUpdateCompleted)="itemUpdated.emit()">
+</app-crud>

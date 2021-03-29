@@ -1,0 +1,19 @@
+<div class="layout-sidebar" [ngClass]="{'layout-sidebar-active': shared.sidebarActive}"
+     (click)="shared.onSidebarClick($event)" (mouseover)="shared.sidebarActive=true" (mouseleave)="shared.sidebarActive=false">
+  <div class="sidebar-logo">
+    <a routerLink="/">
+      <img src="assets/layout/images/logo-white.png"/>
+    </a>
+    <!--<a class="sidebar-anchor animated fadeIn" title="Toggle Menu" (click)="shared.onToggleMenuClick($event)">-->
+      <!--<i class="fa"></i>-->
+    <!--</a>-->
+  </div>
+
+  <div #layoutMenuScroller class="nano">
+    <div class="nano-content sidebar-scroll-content">
+      <div class="layout-menu-container" (click)="updateNanoScroll()">
+        <ul app-submenu [item]="model" root="true" class="layout-menu" visible="true" [reset]="reset"></ul>
+      </div>
+    </div>
+  </div>
+</div>

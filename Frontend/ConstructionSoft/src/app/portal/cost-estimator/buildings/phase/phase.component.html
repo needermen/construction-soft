@@ -1,0 +1,6 @@
+<app-crud [crudService]="service"
+          [cols]="cols"
+          [detailTitle]="detailTitle"
+          [provideTable]="false"
+          (itemUpdateCompleted)="this.phaseUpdated.emit()">
+</app-crud>

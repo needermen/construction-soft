@@ -1,0 +1,9 @@
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/bin/Debug/netcoreapp2.1/Cs.Common.deps.json
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/bin/Debug/netcoreapp2.1/Cs.Common.dll
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/bin/Debug/netcoreapp2.1/Cs.Common.pdb
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/obj/Debug/netcoreapp2.1/Cs.Common.csprojAssemblyReference.cache
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/obj/Debug/netcoreapp2.1/Cs.Common.csproj.CoreCompileInputs.cache
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/obj/Debug/netcoreapp2.1/Cs.Common.AssemblyInfoInputs.cache
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/obj/Debug/netcoreapp2.1/Cs.Common.AssemblyInfo.cs
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/obj/Debug/netcoreapp2.1/Cs.Common.dll
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Common/obj/Debug/netcoreapp2.1/Cs.Common.pdb

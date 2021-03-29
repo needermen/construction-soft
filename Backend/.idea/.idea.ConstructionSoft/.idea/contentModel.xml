@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Application" t="Include" />
+      <e p="Common" t="Include" />
+      <e p="ConstructionSoft.sln" t="IncludeFlat" />
+      <e p="Domain" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Persistence" t="Include" />
+      <e p="Service" t="Include" />
+      <e p="Source/Cs.Application" t="IncludeRecursive">
+        <e p="Auth" t="Include">
+          <e p="AuthService.cs" t="Include" />
+          <e p="IAuthService.cs" t="Include" />
+        </e>
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Buildings" t="Include">
+          <e p="BuildingService.cs" t="Include" />
+          <e p="IBuildingService.cs" t="Include" />
+          <e p="IGetDateRangesService.cs" t="Include" />
+          <e p="IPhaseService.cs" t="Include" />
+          <e p="IWorkCategoryService.cs" t="Include" />
+          <e p="IWorkService.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="BuildingBaseViewModel.cs" t="Include" />
+            <e p="BuildingViewModel.cs" t="Include" />
+            <e p="DateRangeViewModel.cs" t="Include" />
+            <e p="PhaseViewModel.cs" t="Include" />
+            <e p="WorkBrigadeViewModel.cs" t="Include" />
+            <e p="WorkBuildingMaterialViewModel.cs" t="Include" />
+            <e p="WorkCategoryViewModel.cs" t="Include" />
+            <e p="WorkConsumptionMaterialViewModel.cs" t="Include" />
+            <e p="WorkMainMaterialViewModel.cs" t="Include" />
+            <e p="WorkTechnicViewModel.cs" t="Include" />
+            <e p="WorkViewModel.cs" t="Include" />
+            <e p="WorkWorkerViewModel.cs" t="Include" />
+          </e>
+          <e p="PhaseService.cs" t="Include" />
+          <e p="WorkBrigadeService.cs" t="Include" />
+          <e p="WorkBuildingMaterialService.cs" t="Include" />
+          <e p="WorkCategoryService.cs" t="Include" />
+          <e p="WorkConsumptionMaterialService.cs" t="Include" />
+          <e p="WorkMainMaterialService.cs" t="Include" />
+          <e p="WorkService.cs" t="Include" />
+          <e p="WorkTechnicService.cs" t="Include" />
+          <e p="WorkWorkerService.cs" t="Include" />
+        </e>
+        <e p="Cs.Application.csproj" t="IncludeRecursive" />
+        <e p="Files" t="Include">
+          <e p="FileService.cs" t="Include" />
+          <e p="IFileService.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="FileViewModel.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Hr" t="Include">
+          <e p="BrigadeCategoryService.cs" t="Include" />
+          <e p="BrigadeService.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="BrigadeViewModel.cs" t="Include" />
+            <e p="WorkerViewModel.cs" t="Include" />
+          </e>
+          <e p="PaymentTypeService.cs" t="Include" />
+          <e p="WorkerCategoryService.cs" t="Include" />
+          <e p="WorkerService.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IAuthDbService.cs" t="Include" />
+          <e p="IBuildingDbService.cs" t="Include" />
+          <e p="ICrudOperation.cs" t="Include" />
+          <e p="IDbService.cs" t="Include" />
+          <e p="IDependedCrudOperation.cs" t="Include" />
+          <e p="IHrDbService.cs" t="Include" />
+          <e p="IMaterialDbService.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="IStorageDbService.cs" t="Include" />
+          <e p="ITechnicDbService.cs" t="Include" />
+        </e>
+        <e p="Material" t="Include">
+          <e p="BuildingMaterialCategoryService.cs" t="Include" />
+          <e p="BuildingMaterialService.cs" t="Include" />
+          <e p="ConsumptionMaterialCategoryService.cs" t="Include" />
+          <e p="ConsumptionMaterialService.cs" t="Include" />
+          <e p="MainMaterialCategoryService.cs" t="Include" />
+          <e p="MainMaterialService.cs" t="Include" />
+          <e p="MaterialDimensionService.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Cs.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Org" t="Include">
+          <e p="IUserService.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="ChangePasswordModel.cs" t="Include" />
+            <e p="OrganizationViewModel.cs" t="Include" />
+            <e p="UserViewModel.cs" t="Include" />
+          </e>
+          <e p="OrganizationService.cs" t="Include" />
+          <e p="UserService.cs" t="Include" />
+        </e>
+        <e p="Technic" t="Include">
+          <e p="TechnicCategoryService.cs" t="Include" />
+          <e p="TechnicDimensionService.cs" t="Include" />
+          <e p="TechnicService.cs" t="Include" />
+        </e>
+        <e p="Tools" t="Include">
+          <e p="Di.cs" t="Include" />
+          <e p="Mapper" t="Include">
+            <e p="DomainToViewProfile.cs" t="Include" />
+            <e p="ViewToDomainProfile.cs" t="Include" />
+          </e>
+          <e p="ServiceException.cs" t="Include" />
+          <e p="UIConstants.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Source/Cs.Common" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Cs.Common.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="ListResult.cs" t="Include" />
+          <e p="Paging.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Cs.Common.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Tools" t="Include">
+          <e p="Security" t="Include">
+            <e p="CryptoHelper.cs" t="Include" />
+          </e>
+          <e p="TokenGenerator.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Source/Cs.Domain" t="IncludeRecursive">
+        <e p="Auth" t="Include">
+          <e p="Configuration" t="Include">
+            <e p="OrganizationRoleConfiguration.cs" t="Include" />
+            <e p="UserRoleConfiguration.cs" t="Include" />
+          </e>
+          <e p="Organization.cs" t="Include" />
+          <e p="OrganizationRole.cs" t="Include" />
+          <e p="Role.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+          <e p="UserRole.cs" t="Include" />
+        </e>
+        <e p="BaseEntity.cs" t="Include" />
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Buildings" t="Include">
+          <e p="Building.cs" t="Include" />
+          <e p="BuildingBaseEntity.cs" t="Include" />
+          <e p="Configuration" t="Include">
+            <e p="WorkBrigadeConfiguration.cs" t="Include" />
+            <e p="WorkBuildingMaterialConfiguration.cs" t="Include" />
+            <e p="WorkConsumptionMaterialConfiguration.cs" t="Include" />
+            <e p="WorkMainMaterialConfiguration.cs" t="Include" />
+            <e p="WorkTechnicConfiguration.cs" t="Include" />
+            <e p="WorkWorkerConfiguration.cs" t="Include" />
+          </e>
+          <e p="Phase.cs" t="Include" />
+          <e p="Work.cs" t="Include" />
+          <e p="WorkBrigade.cs" t="Include" />
+          <e p="WorkBuildingMaterial.cs" t="Include" />
+          <e p="WorkCategory.cs" t="Include" />
+          <e p="WorkConsumptionMaterial.cs" t="Include" />
+          <e p="WorkMainMaterial.cs" t="Include" />
+          <e p="WorkTechnic.cs" t="Include" />
+          <e p="WorkWorker.cs" t="Include" />
+        </e>
+        <e p="Common" t="Include">
+          <e p="OrganizationRelation.cs" t="Include" />
+        </e>
+        <e p="Cs.Domain.csproj" t="IncludeRecursive" />
+        <e p="Files" t="Include">
+          <e p="BrigadeFile.cs" t="Include" />
+          <e p="Configuration" t="Include">
+            <e p="BrigadeFileConfiguration.cs" t="Include" />
+            <e p="WorkerFileConfiguration.cs" t="Include" />
+          </e>
+          <e p="File.cs" t="Include" />
+          <e p="WorkerFile.cs" t="Include" />
+        </e>
+        <e p="Hr" t="Include">
+          <e p="Brigade.cs" t="Include" />
+          <e p="BrigadeCategory.cs" t="Include" />
+          <e p="PaymentType.cs" t="Include" />
+          <e p="Worker.cs" t="Include" />
+          <e p="WorkerCategory.cs" t="Include" />
+        </e>
+        <e p="Materials" t="Include">
+          <e p="BuildingMaterial.cs" t="Include" />
+          <e p="BuildingMaterialCategory.cs" t="Include" />
+          <e p="ConsumptionMaterial.cs" t="Include" />
+          <e p="ConsumptionMaterialCategory.cs" t="Include" />
+          <e p="MainMaterial.cs" t="Include" />
+          <e p="MainMaterialCategory.cs" t="Include" />
+          <e p="MaterialDimension.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Cs.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Technics" t="Include">
+          <e p="Technic.cs" t="Include" />
+          <e p="TechnicCategory.cs" t="Include" />
+          <e p="TechnicDimension.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Source/Cs.Persistence" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Cs.Persistence.csproj" t="IncludeRecursive" />
+        <e p="CsDbContext.cs" t="Include" />
+        <e p="Factory" t="Include">
+          <e p="CsDbContetFactory.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20181017180135_resources_add_coef_and_comment.cs" t="Include" />
+          <e p="20181017180135_resources_add_coef_and_comment.Designer.cs" t="Include" />
+          <e p="20181017180826_resources_coef_default_value.cs" t="Include" />
+          <e p="20181017180826_resources_coef_default_value.Designer.cs" t="Include" />
+          <e p="20181024193158_add_extra_price_fields.cs" t="Include" />
+          <e p="20181024193158_add_extra_price_fields.Designer.cs" t="Include" />
+          <e p="CsDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Cs.Persistence.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repository.cs" t="Include" />
+        <e p="Services" t="Include">
+          <e p="AuthDbService.cs" t="Include" />
+          <e p="BuildingDbService.cs" t="Include" />
+          <e p="HrDbService.cs" t="Include" />
+          <e p="MaterialDbService.cs" t="Include" />
+          <e p="StorageDbService.cs" t="Include" />
+          <e p="TechnicDbService.cs" t="Include" />
+        </e>
+        <e p="Tools" t="Include">
+          <e p="Di.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Source/Cs.Service" t="IncludeRecursive">
+        <e p="Admin" t="Include">
+          <e p="AdminController.cs" t="Include" />
+          <e p="Hr" t="Include">
+            <e p="BrigadeCategoryController.cs" t="Include" />
+            <e p="BrigadeController.cs" t="Include" />
+            <e p="PaymentTypeController.cs" t="Include" />
+            <e p="WorkerCategoryController.cs" t="Include" />
+            <e p="WorkerController.cs" t="Include" />
+          </e>
+          <e p="Material" t="Include">
+            <e p="BuildingMaterialCategoryController.cs" t="Include" />
+            <e p="BuildingMaterialController.cs" t="Include" />
+            <e p="ConsumptionMaterialCategoryController.cs" t="Include" />
+            <e p="ConsumptionMaterialController.cs" t="Include" />
+            <e p="MainMaterialCategoryController.cs" t="Include" />
+            <e p="MainMaterialController.cs" t="Include" />
+            <e p="MaterialDimensionController.cs" t="Include" />
+          </e>
+          <e p="Org" t="Include">
+            <e p="OrganizationController.cs" t="Include" />
+            <e p="UserController.cs" t="Include" />
+          </e>
+          <e p="ResourceController.cs" t="Include" />
+          <e p="Technic" t="Include">
+            <e p="TechnicCategoryController.cs" t="Include" />
+            <e p="TechnicController.cs" t="Include" />
+            <e p="TechnicDimensionController.cs" t="Include" />
+          </e>
+        </e>
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="Auth" t="Include">
+          <e p="AuthController.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="UserLoginModel.cs" t="Include" />
+            <e p="UserModel.cs" t="Include" />
+          </e>
+          <e p="RoleController.cs" t="Include" />
+        </e>
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Common" t="Include">
+          <e p="BaseController.cs" t="Include" />
+          <e p="FileController.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="ServiceResult.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Configuration" t="Include">
+          <e p="Filters" t="Include">
+            <e p="AuthFilter.cs" t="Include" />
+          </e>
+          <e p="Middlewares" t="Include">
+            <e p="LogAndExceptionHandler.cs" t="Include" />
+          </e>
+          <e p="Swagger" t="Include">
+            <e p="AuthorizationHeaderOperationFilter.cs" t="Include" />
+          </e>
+          <e p="User" t="Include">
+            <e p="UserCreation.cs" t="Include" />
+          </e>
+        </e>
+        <e p="CostEstimator" t="Include">
+          <e p="Buildings" t="Include">
+            <e p="BuildingController.cs" t="Include" />
+            <e p="PhaseController.cs" t="Include" />
+            <e p="WorkBrigadeController.cs" t="Include" />
+            <e p="WorkBuildingMaterialController.cs" t="Include" />
+            <e p="WorkCategoryController.cs" t="Include" />
+            <e p="WorkConsumptionMaterialController.cs" t="Include" />
+            <e p="WorkController.cs" t="Include" />
+            <e p="WorkMainMaterialController.cs" t="Include" />
+            <e p="WorkTechnicController.cs" t="Include" />
+            <e p="WorkWorkerController.cs" t="Include" />
+          </e>
+          <e p="CostEstimatorController.cs" t="Include" />
+        </e>
+        <e p="Cs.Service.csproj" t="IncludeRecursive" />
+        <e p="Logs" t="Include">
+          <e p="20180911.txt" t="Include" />
+          <e p="20180914.txt" t="Include" />
+          <e p="20180916.txt" t="Include" />
+          <e p="20180917.txt" t="Include" />
+          <e p="20180918.txt" t="Include" />
+          <e p="20180920.txt" t="Include" />
+          <e p="20180922.txt" t="Include" />
+          <e p="20180923.txt" t="Include" />
+          <e p="20180924.txt" t="Include" />
+          <e p="20181025.txt" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Cs.Service.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="folder.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="publish.txt" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_ConstructionSoft.1100895173.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+  </component>
+</project>

@@ -1,0 +1,23 @@
+<div class="layout-wrapper" (click)="layout.onWrapperClick()"
+     [ngClass]="{'layout-wrapper-static': layout.layoutStatic,
+                'layout-wrapper-active': layout.mobileMenuActive}">
+
+  <app-menu [shared]="layout" [model]="menuItems"></app-menu>
+
+  <div class="layout-main">
+    <app-topbar [shared]="layout" [user]="user?.fullName"></app-topbar>
+
+    <div class="layout-content">
+      <router-outlet>
+      </router-outlet>
+    </div>
+
+    <app-footer [shared]="layout"></app-footer>
+    <div class="layout-main-mask" *ngIf="layout.mobileMenuActive"></div>
+  </div>
+
+  <app-rightpanel [shared]="layout"></app-rightpanel>
+
+</div>
+
+<p-toast [style]="{marginTop: '50px'}"></p-toast>

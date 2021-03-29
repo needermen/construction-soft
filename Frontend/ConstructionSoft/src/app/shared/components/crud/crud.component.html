@@ -1,0 +1,215 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <ng-container *ngIf="provideTable">
+      <h3 class="first" *ngIf="title != null"> {{ title }}</h3>
+      <p-table [columns]="cols"
+               [value]="items"
+               selectionMode="single"
+               [(selection)]="item"
+               (onRowSelect)="onRowSelect($event)"
+               [paginator]="total > rows"
+               [rows]="rows" [totalRecords]="total"
+               [lazy]="true"
+               (onLazyLoad)="fetchDataLazy($event)"
+               [loading]="loading">
+        <ng-template pTemplate="caption">
+          <div style="text-align: right">
+            <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+            <input type="text" pInputText size="25" placeholder="ძებნა" (input)="filterData($event.target.value)"
+                   style="width:auto">
+          </div>
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <ng-container *ngFor="let col of columns">
+              <th *ngIf="!col.hideFromTable">
+                {{col.header}}
+              </th>
+            </ng-container>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr [pSelectableRow]="rowData">
+            <ng-container *ngFor="let col of columns">
+              <ng-container *ngIf="!col.hideFromTable" [ngSwitch]="col.type">
+                <td *ngSwitchCase="'check'" [style.text-align]="'center'">
+                  <p-checkbox [(ngModel)]="getProperty(col.showfield, rowData) || rowData[col.field]" [binary]="true"
+                              [disabled]="true"></p-checkbox>
+                </td>
+                <td *ngSwitchCase="'date'" [style.text-align]="'center'">
+                  {{ getProperty(col.showfield, rowData) || rowData[col.field] | date : 'dd.MM.yyy' }}
+                </td>
+                <td *ngSwitchCase="'logo'">
+                  <div style="text-align: center">
+                    <img *ngIf="rowData[col.field] != null" src="data:image/png;base64,{{ rowData[col.field] }}" alt="" width="50"/>
+                  </div>
+                </td>
+                <td *ngSwitchCase="'link'">
+                  <a style="color: #4f0080 !important; text-decoration: underline;" [routerLink]="[col.link.toString(), rowData.id]"> {{ col.field}}</a>
+                </td>
+                <td *ngSwitchDefault>
+                  {{ getProperty(col.showfield, rowData) || rowData[col.field] }}
+                </td>
+              </ng-container>
+            </ng-container>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage" let-columns>
+          <tr>
+            <td [attr.colspan]="getTableColumsCount()" style="text-align: center;">
+              ჩანაწერები ვერ მოიძებნა
+            </td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="summary" let-rowData>
+          <div style="text-align: left;">
+            <button type="button" pButton icon="fa fa-plus" (click)="onAdd()" label="დამატება"></button>
+
+            <span style="float: right;margin-top: 3px"> {{ tableSummaryInfo }}</span>
+          </div>
+        </ng-template>
+      </p-table>
+    </ng-container>
+  </div>
+</div>
+<p-dialog [header]="detailTitle" [(visible)]="displayDialog"
+          [responsive]="true" showEffect="fade" [modal]="true" [width]="600" [positionTop]="70" [minY]="70" [minX]="247"
+          [dismissableMask]="true"
+          (onHide)="formHide.emit()" (onShow)="formShow.emit()">
+  <div class="ui-g ui-fluid" *ngIf="item" [style.position]="'relative'">
+    <form [formGroup]="form" [style.width]="'100%'">
+      <div class="ui-g-12" *ngFor="let col of cols">
+        <ng-container *ngIf="col.type != null && !(col.type == 'info' && newItem)">
+          <div class="ui-g-4">
+            <label>{{ col.header }}:</label>
+          </div>
+          <div class="ui-g-8">
+            <ng-container [ngSwitch]="col.type">
+              <ng-container *ngSwitchCase="'info'">
+                <label>{{ item[col.field] }}</label>
+              </ng-container>
+
+              <p-autoComplete *ngSwitchCase="'select'"
+                              [dropdown]="true"
+                              [(ngModel)]="selectSelected[col.field]"
+                              [suggestions]="selectData[col.field]"
+                              (completeMethod)="loadSelect($event, col)"
+                              [scrollHeight]="300"
+                              [disableControl]="denyfieldedit(col)"
+                              [required]="!col.optional"
+                              (onSelect)="onSelectValueChanged(col)"
+                              (onUnselect)="onSelectValueChanged(col)"
+                              [formControlName]="col.field"
+                              [field]="col.selectfield">
+              </p-autoComplete>
+
+              <p-dropdown *ngSwitchCase="'dropdown'"
+                          [(ngModel)]="selectSelected[col.field]"
+                          [options]="selectData[col.field]"
+                          [formControlName]="col.field"
+                          [required]="!col.optional"
+                          [optionLabel]="col.selectfield"
+                          (onChange)="onDropDownValueChanged(col)"
+                          [style]="{'min-width':'150px'}">
+              </p-dropdown>
+
+              <p-multiSelect *ngSwitchCase="'multi'"
+                             [defaultLabel]="'არცერთი'"
+                             [options]="multiData[col.field]"
+                             [optionLabel]="col.selectfield"
+                             [filter]="false"
+                             [showHeader]="true"
+                             [formControlName]="col.field"
+                             [disableControl]="denyfieldedit(col)"
+                             [required]="!col.optional"
+                             [(ngModel)]="multiSelected[col.field]"
+                             (onChange)="onMultiValueChanged(col)">
+              </p-multiSelect>
+
+              <input *ngSwitchCase="'input'" pInputText
+                     [formControlName]="col.field"
+                     [(ngModel)]="item[col.field]"
+                     [disableControl]="denyfieldedit(col)"
+                     [placeholder]="col.optional ? '' : ' აუცილებელი'"
+                     [required]="!col.optional"
+                     (change)="onInputValueChanged(col)"/>
+
+              <p-spinner *ngSwitchCase="'number'" [formControlName]="col.field" [(ngModel)]="item[col.field]"
+                         [disableControl]="denyfieldedit(col)"
+                         [placeholder]="col.optional ? '' : ' აუცილებელი'"
+                         [required]="!col.optional"
+                         [step]="col.step" [min]="col.min" [max]="col.max"
+                         (onChange)="onInputValueChanged(col)">
+              </p-spinner>
+
+              <p-checkbox *ngSwitchCase="'check'"
+                          [formControlName]="col.field"
+                          binary="true"
+                          [(ngModel)]="item[col.field]"
+                          [disableControl]="denyfieldedit(col)"
+                          (onChange)="onCheckValueChanged(col)">
+              </p-checkbox>
+
+              <p-calendar *ngSwitchCase="'date'"
+                          [formControlName]="col.field"
+                          [(ngModel)]="item[col.field]"
+                          [dateFormat]="'dd.mm.yy'"
+                          [disableControl]="denyfieldedit(col)"
+                          showIcon="true"
+                          [placeholder]="col.optional ? '' : ' აუცილებელი'"
+                          (onSelect)="onDateValueChanged(col)"
+                          [required]="!col.optional">
+              </p-calendar>
+
+              <p-fileUpload *ngSwitchCase="'file'"
+                            name="files" [chooseLabel]="'აირჩიეთ'"
+                            (onUpload)="onupload($event)"
+                            [url]="col.url" auto="auto" multiple="multiple">
+                <ng-template pTemplate="content">
+                  <ul *ngIf="item.files != null && item.files.length > 0; else noFilesUploaded">
+                    <li *ngFor="let file of item.files" style="margin-top: 8px">
+                      {{file.fileName}}
+                      <a target="_blank" [href]="col.url + '/' + file.id" style="margin:0px 10px 0px 10px">გადმოწერა</a>
+                      <a href="javascript:void(0)" (click)="item.files.splice(item.files.indexOf(file), 1)">წაშლა</a>
+                    </li>
+                  </ul>
+                  <ng-template #noFilesUploaded>
+                    <span>ფაილები არ არის ატვირთული</span>
+                  </ng-template>
+                </ng-template>
+              </p-fileUpload>
+
+              <p-fileUpload *ngSwitchCase="'logo'" [showUploadButton]="false" [showCancelButton]="false"
+                            accept="image/*" customUpload="true" [chooseLabel]="'აირჩიეთ'"
+                            (onSelect)="onLogoSelect($event, col)">
+                <ng-template pTemplate="content">
+                  <ng-container *ngIf="item[col.field] != null; else noLogoUploaded">
+                    <div>
+                      <img src="data:image/png;base64,{{ item[col.field] }}" alt="" width="50"/>
+                      <div>
+                        <a href="javascript:void(0)" (click)="item[col.field] = null">წაშლა</a>
+                      </div>
+                    </div>
+                  </ng-container>
+                  <ng-template #noLogoUploaded>
+                    <span>ლოგო არ არის ატვირთული</span>
+                  </ng-template>
+                </ng-template>
+                <ng-template pTemplate="file"></ng-template>
+              </p-fileUpload>
+
+            </ng-container>
+          </div>
+        </ng-container>
+      </div>
+    </form>
+  </div>
+  <br>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="submit" pButton icon="fa fa-check" (click)="save()" label="შენახვა"
+              [disabled]="!form.valid || !formIsValid()"></button>
+      <button type="button" *ngIf="!newItem" pButton icon="fa fa-close" (click)="delete()" label="წაშლა"></button>
+    </div>
+  </p-footer>
+</p-dialog>

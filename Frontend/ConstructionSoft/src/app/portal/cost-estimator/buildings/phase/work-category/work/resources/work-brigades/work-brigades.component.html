@@ -1,0 +1,6 @@
+<app-crud [crudService]="service" [cols]="cols"
+          [detailTitle]="'ბრიგადის დამატება/რედაქტირება'"
+          [title]="'ბრიგადები'"
+          [tableSummaryInfo]="summary"
+          (itemUpdateCompleted)="itemUpdated.emit()">
+</app-crud>

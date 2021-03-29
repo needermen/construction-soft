@@ -1,0 +1,5 @@
+ng build --base-href=/cs/ --prod
+
+deploy on IIS on cs subfolder on 80 port
+
+deploy backend on cs.backend subfolder on 80 port

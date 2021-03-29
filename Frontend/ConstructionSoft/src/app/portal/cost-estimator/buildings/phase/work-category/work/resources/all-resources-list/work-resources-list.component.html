@@ -1,0 +1,43 @@
+<ng-container *ngIf="(filterText != null && filterText != '') || loading || resources.length > 0">
+  <h3>რესურსები</h3>
+  <p-table [value]="resourcesOnPage" [paginator]="resources.length > rows" [rows]="rows" [lazy]="true"
+           [totalRecords]="resources.length"
+           [loading]="loading"
+           (onPage)="onPageChange($event)">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>სახელი</th>
+        <th>კატეგორია</th>
+        <th>განზომილება</th>
+        <th>კოეფიციენტი</th>
+        <th>ცვეთა</th>
+        <th>რაოდენობა</th>
+        <th>ერთ.ფასი</th>
+        <th>სულ ფასი</th>
+        <th>ანაზღაურება</th>
+        <th>ანაზღაურების ტიპი</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="caption">
+      <div style="text-align: right">
+        <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+        <input type="text" pInputText size="25" placeholder="ძებნა" (input)="filterData($event.target.value)"
+               style="width:auto">
+      </div>
+    </ng-template>
+    <ng-template pTemplate="body" let-resource>
+      <tr>
+        <td>{{resource.name}}</td>
+        <td>{{resource.category}}</td>
+        <td>{{resource.dimension}}</td>
+        <td>{{resource.coefficient}}</td>
+        <td>{{resource.depreciation}}</td>
+        <td>{{resource.count}}</td>
+        <td>{{resource.perPrice}}</td>
+        <td>{{resource.fullPrice}}</td>
+        <td>{{resource.salary}}</td>
+        <td>{{resource.paymentType}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</ng-container>

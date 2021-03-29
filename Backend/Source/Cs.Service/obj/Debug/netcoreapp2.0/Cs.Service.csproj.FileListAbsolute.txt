@@ -1,0 +1,15 @@
+C:/Users/needermen/Code/p/ConstructionSoft/Backend/Source/Cs.Service/bin/Debug/netcoreapp2.0/Cs.Service.dll
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/bin/Debug/netcoreapp2.0/Cs.Service.deps.json
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/bin/Debug/netcoreapp2.0/Cs.Service.runtimeconfig.json
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/bin/Debug/netcoreapp2.0/Cs.Service.runtimeconfig.dev.json
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/bin/Debug/netcoreapp2.0/Cs.Service.dll
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/bin/Debug/netcoreapp2.0/Cs.Service.pdb
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.csprojAssemblyReference.cache
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.csproj.CoreCompileInputs.cache
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.RazorAssemblyInfo.cache
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.RazorAssemblyInfo.cs
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.AssemblyInfoInputs.cache
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.AssemblyInfo.cs
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.RazorTargetAssemblyInfo.cache
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.dll
+/Users/needermen/Desktop/ConstructionSoft/Backend/Source/Cs.Service/obj/Debug/netcoreapp2.0/Cs.Service.pdb

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <title>Login</title>
+</head>
+
+<body class="login-body" *ngIf="!loading">
+<div class="ui-g">
+  <div class="ui-g-12" style="text-align:center">
+    <img src="assets/layout/images/logo-manhattan.png" class="logo"/>
+  </div>
+</div>
+<form (ngSubmit)="onLogin()">
+  <div class="login-panel ui-fluid">
+    <div class="ui-g">
+      <div class="ui-g-6 left-side">
+        <img src="assets/layout/images/login/login-photo.png" class="login-image"/>
+      </div>
+      <div class="ui-g-6 ui-sm-12 right-side">
+        <div class="ui-g-12 container">
+          <h3>გამარჯობა!</h3>
+          <h2>სისტემაში შესვლა</h2>
+          <h2>{{errorMessage}}</h2>
+        </div>
+        <div class="ui-g-12">
+          <label for="username" value="Username"></label>
+          <div class="input-wrapper">
+            <input type="text" id="username" (input)="clearErrorMessage()" [(ngModel)]="username"
+                   [ngModelOptions]="{standalone: true}" autocomplete="off" placeholder="მომხმარებელი"
+                   class="ui-inputtext ui-widget">
+            <i class="fa fa-user"></i>
+          </div>
+        </div>
+        <div class="ui-g-12">
+          <label for="password" value="Password"></label>
+          <div class="input-wrapper">
+            <input type="password" id="password" (input)="clearErrorMessage()" [(ngModel)]="password"
+                   [ngModelOptions]="{standalone: true}" name="password" autocomplete="off" placeholder="პაროლი"
+                   class="ui-inputtext ui-widget">
+            <i class="fa fa-lock"></i>
+          </div>
+        </div>
+        <div class="ui-g-12 button-container">
+          <button type="submit"
+                  class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only blue-btn raised-btn">
+            <span class="ui-button-text ui-c">შესვლა</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>
+
+<p-toast></p-toast>
+

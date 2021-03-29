@@ -1,0 +1,59 @@
+@import '../_variables';
+
+/* Icons */
+$iconFontSize:1em;
+$iconWidth:1.1em;
+
+/* Error */
+$errorColor:#f28a8b;
+
+/*  Invalid Input */
+$inputInvalidBorderColor:#e17576;
+$inputInvalidBgColor:#ffffff;
+
+/* Headers */
+$headerPadding:.5em 1em;
+$headerHoverBgColor:#f1f2f7;
+
+/* Contents */
+$contentPadding:.5em 1em;
+$contentBorderColor:#b6b7c2;
+$contentBgColor:#ffffff;
+
+/* Forms */
+$inputBgColor:#ffffff;
+$inputPadding:.5em;
+$inputBorderColor:#b6b7c2;
+$inputHoverBorderColor:#7f8087;
+
+/* Buttons */
+$buttonTextColor:#ffffff;
+$toggleButtonBgColor:#b6b7c2;
+
+/* List Items */
+$listItemPadding:.5em 1em;
+$listItemHoverBgColor:#f1f2f7;
+$listItemHoverTextColor:#434560;
+
+/* Messages */
+$successMessageBgColor:#dff0d8;
+$successMessageTextColor:#3c763d;
+$successMessageBorderColor:#d6e9c6;
+$infoMessageBgColor:#d9edf7;
+$infoMessageTextColor:#31708f;
+$infoMessageBorderColor:#faebcc;
+$warnMessageBgColor:#fcf8e3;
+$warnMessageTextColor:#8a6d3b;
+$warnMessageBorderColor:#434560;
+$errorMessageBgColor:#f2dede;
+$errorMessageTextColor:#a94442;
+$errorMessageBorderColor:#ebccd1;
+
+/* Data */
+$datatableCellBorderColor:#dbe1e6;
+
+/* TabView */
+$tabHeaderPadding:.6em 1em;
+
+/* Panel */
+$panelContentBorderColor:#DCE1E7;

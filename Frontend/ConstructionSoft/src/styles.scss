@@ -1,0 +1,49 @@
+.ui-tabview-panel {
+  border: 0px !important;
+}
+
+.borderless {
+  .ui-scrollpanel {
+    border: 0px !important;
+  }
+
+  .ui-tabview-panels {
+    border: 0px !important;
+  }
+
+  .ui-tabview-nav {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+
+.ui-organizationchart {
+  margin: 10px auto !important;
+}
+
+.ui-progress-spinner {
+  position: absolute;
+  top: 46%;
+  left: 46.5%;
+  width: 100px;
+}
+
+table.ui-treetable-table {
+  .kb-row {
+    width: 100% !important;
+
+    .kb-cell-xl {
+      width: 25% !important;
+      min-width: 300px !important;
+    }
+
+    .kb-cell-md {
+      width: 200px !important;
+    }
+
+    .kb-cell-sm {
+      width: 100px !important;
+    }
+  }
+}
+

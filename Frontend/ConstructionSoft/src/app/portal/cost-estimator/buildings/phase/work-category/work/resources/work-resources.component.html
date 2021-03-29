@@ -1,0 +1,142 @@
+<p-dialog [header]="'სამუშაოს დეტალები (რესურსების დამატება / რედაქტირება)'"
+          [(visible)]="show"
+          [responsive]="true"
+          showEffect="fade"
+          [modal]="true"
+          [width]="1000"
+          [positionTop]="40"
+          (onHide)="closed.emit()"
+          [minX]="124"
+          [minY]="124"
+          [dismissableMask]="true"
+          [baseZIndex]="1000000">
+  <div class="ui-g" style="margin-left: 27px;margin-top: 7px;">
+    <form [formGroup]="form" [style.width]="'100%'" (ngSubmit)="onSubmit()">
+      <div class="p-grid p-justify-between">
+        <div class="p-col-6" style="padding-top: 11px;">
+          <p-checkbox id="executeByContractor"
+                      class="form-control"
+                      label="სამუშაოს შეასრულებს კონტრაქტორი ორგანიზაცია"
+                      formControlName="executeByContractor"
+                      (onChange)="onCheck($event)"
+                      [binary]="true"></p-checkbox>
+        </div>
+        <div class="p-col-4" *ngIf="!executeByContractor.value && work!=null">
+          <span>ფასნამატი(%):</span>
+          <p-spinner style="margin-left: 5px;"
+                     id="extraPricePercent" placeholder="%" size="10" (onChange)="onPricePercentChange($event)"
+                     [step]="0.1" [min]="0" formControlName="extraPricePercent">
+          </p-spinner>
+        </div>
+        <div class="p-col-2">
+          <button pButton type="submit" [label]="'შენახვა'" style="float:right;width: 100px;margin-right:7px;"></button>
+        </div>
+      </div>
+      <ng-container *ngIf="executeByContractor.value">
+        <div class="ui-g">
+          <div class="ui-g-4">
+            <label>შეიყვანეთ კონტრაქტორი</label>
+          </div>
+          <div class="ui-g-8">
+            <input pInputText [style.width]="'100%'" id="contractorName" formControlName="contractorName" required/>
+          </div>
+        </div>
+        <div class="ui-g">
+          <div class="ui-g-4">
+            <label>ფასი</label>
+          </div>
+          <div class="ui-g-8">
+            <p-spinner id="contractorPrice" size="30"
+                       [step]="1" [min]="0" formControlName="contractorPrice">
+            </p-spinner>
+          </div>
+        </div>
+        <div class="ui-g">
+          <div class="ui-g-4">
+            <label>ფასნამატი</label>
+          </div>
+          <div class="ui-g-8">
+            <p-spinner id="contractorExtraPrice" placeholder="%" size="30"
+                       [step]="1" [min]="0" formControlName="contractorExtraPrice">
+            </p-spinner>
+          </div>
+        </div>
+        <div class="ui-g" *ngIf="showErrors">
+          <div class="ui-g-12" *ngIf="contractorName?.invalid">
+            <div class="alert alert-danger">
+              <div *ngIf="contractorName?.errors?.required">
+                კონტრაქტორი აუცილებელია
+              </div>
+            </div>
+          </div>
+          <div class="ui-g-12" *ngIf="contractorPrice?.invalid">
+            <div class="alert alert-danger">
+              <div *ngIf="contractorPrice?.errors?.required">
+                ფასი აუცილებელია
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </form>
+  </div>
+  <div class="ui-g" style="margin-top: -10px" *ngIf="!executeByContractor.value && work!=null">
+    <div class="ui-g-12">
+      <p-tabView class="borderless">
+        <p-tabPanel header="მასალები">
+          <p-scrollPanel [style]="{height: '500px'}">
+            <div class="ui-g" style="margin-right: 25px">
+              <app-work-building-material [workId]="work?.id"
+                                          [fullPrice]="work?.priceForBMaterials"
+                                          [extraPricePercent]=work?.extraPricePercent
+                                          (itemUpdated)="loadWork()">
+              </app-work-building-material>
+            </div>
+            <div class="ui-g" style="margin-right: 25px">
+              <app-work-consumption-material [workId]="work?.id"
+                                             [fullPrice]="work?.priceForCMaterials"
+                                             [extraPricePercent]=work?.extraPricePercent
+                                             (itemUpdated)="loadWork()">
+              </app-work-consumption-material>
+            </div>
+            <div class="ui-g" style="margin-right: 25px;margin-bottom: 40px">
+              <app-work-main-material [workId]="work?.id"
+                                      [fullPrice]="work?.priceForMMaterials"
+                                      [extraPricePercent]=work?.extraPricePercent
+                                      (itemUpdated)="loadWork()">
+              </app-work-main-material>
+            </div>
+          </p-scrollPanel>
+        </p-tabPanel>
+        <p-tabPanel header="ტექნიკა">
+          <app-work-technic [workId]="work?.id"
+                            [fullPrice]="work?.priceForTechnics"
+                            [extraPricePercent]=work?.extraPricePercent
+                            (itemUpdated)="loadWork()">
+          </app-work-technic>
+        </p-tabPanel>
+        <p-tabPanel header="მუშახელი და ბრიგადები">
+          <app-work-workers [workId]="work?.id"
+                            [fullPrice]="work?.priceForWorkers"
+                            [extraPricePercent]=work?.extraPricePercent
+                            (itemUpdated)="loadWork()">
+          </app-work-workers>
+          <app-work-brigades [workId]="work?.id"
+                             [fullPrice]="work?.priceForBrigades"
+                             [extraPricePercent]=work?.extraPricePercent
+                             (itemUpdated)="loadWork()">
+          </app-work-brigades>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+  <p-footer>
+    <div class="ui-g" *ngIf="work != null && work.fullPrice > 0">
+      <div class="ui-g-12">
+        <p style="float:left">სამუშაოს სრული ღირებულება:
+          {{ (executeByContractor.value ? contractorPrice.value + contractorExtraPrice.value
+          : work?.resourcesPrice + work?.resourcesPrice * extraPricePercent.value / 100) | number : "1.2-2" }} ლარი</p>
+      </div>
+    </div>
+  </p-footer>
+</p-dialog>

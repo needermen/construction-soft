@@ -1,0 +1,3 @@
+dotnet publish -c Release
+
+copy from bin/Release/netcoreapp2.1/publish/

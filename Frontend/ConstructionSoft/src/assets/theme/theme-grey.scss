@@ -1,0 +1,16 @@
+$primaryColor:#575867;
+$primaryTextColor:#ffffff;
+$primaryDarkColor:#282939;
+$inputFocusBorderColor:#575867;
+$highlightBgColor:#4DC967;
+$highlightTextColor:#ffffff;
+$headerBgColor:#575867;
+$headerTextColor:#ffffff;
+$headerBorderColor:#575867;
+$headerIconColor:#ffffff;
+$headerIconHoverColor:lighten($primaryColor,35%);
+$headerBorderColor:$primaryColor;
+$datableEvenRowBgColor:#F2F2F7;
+$datatableHoverBgColor:#D9DAE3;
+
+@import '../sass/theme/_theme';

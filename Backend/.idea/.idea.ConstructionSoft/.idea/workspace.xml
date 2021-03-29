@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1bb2399-44f7-46e8-9b9f-4bce66364c24" name="Default" comment="backend: dimension display added">
+      <change beforePath="$PROJECT_DIR$/ConstructionSoft.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ConstructionSoft.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/BuildingViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/BuildingViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/PhaseViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/PhaseViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkCategoryViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkCategoryViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Domain/Buildings/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Domain/Buildings/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Domain/Buildings/Phase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Domain/Buildings/Phase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Persistence/Migrations/CsDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Persistence/Migrations/CsDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/BuildingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/BuildingController.cs" afterDir="false" />
+    </list>
+    <ignored path=".idea/" />
+    <ignored path=".idea/.idea.Backend/" />
+    <ignored path=".idea/.idea.Backend/.idea/" />
+    <ignored path=".idea/.idea.ConstructionSoft/" />
+    <ignored path=".idea/.idea.ConstructionSoft/.idea/" />
+    <ignored path=".vs/" />
+    <ignored path=".vs/config/" />
+    <ignored path=".vs/ConstructionSoft/" />
+    <ignored path=".vs/ConstructionSoft/v15/" />
+    <ignored path=".vs/ConstructionSoft/v15/Server/" />
+    <ignored path=".vs/ConstructionSoft/v15/Server/sqlite3/" />
+    <ignored mask="*.0" />
+    <ignored path="Source/Cs.Application/bin/" />
+    <ignored path="Source/Cs.Application/bin/Debug/" />
+    <ignored path="Source/Cs.Application/bin/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Application/bin/Debug/netcoreapp2.1/publish/" />
+    <ignored path="Source/Cs.Application/obj/" />
+    <ignored path="Source/Cs.Application/obj/Debug/" />
+    <ignored path="Source/Cs.Application/obj/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Common/bin/" />
+    <ignored path="Source/Cs.Common/bin/Debug/" />
+    <ignored path="Source/Cs.Common/bin/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Common/bin/Debug/netcoreapp2.1/publish/" />
+    <ignored path="Source/Cs.Common/obj/" />
+    <ignored path="Source/Cs.Common/obj/Debug/" />
+    <ignored path="Source/Cs.Common/obj/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Domain/bin/" />
+    <ignored path="Source/Cs.Domain/bin/Debug/" />
+    <ignored path="Source/Cs.Domain/bin/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Domain/bin/Debug/netcoreapp2.1/publish/" />
+    <ignored path="Source/Cs.Domain/obj/" />
+    <ignored path="Source/Cs.Domain/obj/Debug/" />
+    <ignored path="Source/Cs.Domain/obj/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Persistence/bin/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/unix/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/unix/lib/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/unix/lib/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win/lib/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win/lib/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win-arm64/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win-arm64/native/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win-x64/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win-x64/native/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win-x86/" />
+    <ignored path="Source/Cs.Persistence/bin/Debug/netcoreapp2.1/publish/runtimes/win-x86/native/" />
+    <ignored path="Source/Cs.Persistence/obj/" />
+    <ignored path="Source/Cs.Persistence/obj/Debug/" />
+    <ignored path="Source/Cs.Persistence/obj/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Service/bin/" />
+    <ignored path="Source/Cs.Service/bin/Debug/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/unix/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/unix/lib/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/unix/lib/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win/lib/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win/lib/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win-arm64/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win-arm64/native/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win-x64/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win-x64/native/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win-x86/" />
+    <ignored path="Source/Cs.Service/bin/Debug/netcoreapp2.1/publish/runtimes/win-x86/native/" />
+    <ignored path="Source/Cs.Service/obj/" />
+    <ignored path="Source/Cs.Service/obj/Debug/" />
+    <ignored path="Source/Cs.Service/obj/Debug/netcoreapp2.1/" />
+    <ignored path="Source/Cs.Service/Logs/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/Cs.Service/publish.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>all</find>
+      <find>All</find>
+      <find>cate</find>
+      <find>pha</find>
+      <find>ServiceResult&lt;bool&gt;.Ok()</find>
+      <find>წორკ</find>
+      <find>order</find>
+      <find>_validate</find>
+      <find>Roles</find>
+      <find>workCategories</find>
+      <find>WorkCategory</find>
+      <find>categ</find>
+      <find>Work</find>
+      <find>building</find>
+      <find>Building</find>
+      <find>Consumption</find>
+      <find>consumption</find>
+      <find>ma</find>
+      <find>Material</find>
+      <find>material</find>
+      <find>mainMaterial</find>
+      <find>technic</find>
+      <find>worker</find>
+      <find>Technic</find>
+      <find>workers</find>
+      <find>Brigade</find>
+      <find>Worker</find>
+      <find>AuthFilter</find>
+      <find>ChangePassword</find>
+      <find>ResourcesPrice</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>BuildingMaterial</replace>
+      <replace>WorkerCategory</replace>
+      <replace>WorkerCategories</replace>
+      <replace>BrigadeCategory</replace>
+      <replace>paymentType</replace>
+      <replace>_db.Users</replace>
+      <replace>organization</replace>
+      <replace>user</replace>
+      <replace>building</replace>
+      <replace>BuildingViewModel</replace>
+      <replace>phase</replace>
+      <replace>workCategory</replace>
+      <replace>orkCategory</replace>
+      <replace>work</replace>
+      <replace>Work</replace>
+      <replace>ServiceResult&lt;bool&gt;.Ok(true)</replace>
+      <replace>workBuildingMaterials</replace>
+      <replace>WorkBuildingMaterial</replace>
+      <replace>consumption</replace>
+      <replace>Consumption</replace>
+      <replace>Main</replace>
+      <replace>main</replace>
+      <replace>technic</replace>
+      <replace>Technic</replace>
+      <replace>worker</replace>
+      <replace>brigade</replace>
+      <replace>Brigade</replace>
+      <replace>BrigadeViewModel</replace>
+      <replace>Worker</replace>
+      <replace>WorkerViewModel</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4B76029-6335-4DF8-AF81-C56E1A4DD237/76/d12a5afe/IParameter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4B76029-6335-4DF8-AF81-C56E1A4DD237/f4/769c8f10/Header.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/0e/a74c45bb/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/ResourceController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4B76029-6335-4DF8-AF81-C56E1A4DD237/47/514d55db/PartialSchema.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Hr/WorkerCategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Hr/BrigadeCategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Hr/BrigadeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/77BC58CD-FD4E-4B39-A5D7-BA881353A9F1/29/65e6f806/Parameter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Hr/WorkerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Hr/PaymentTypeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Org/UserController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4B76029-6335-4DF8-AF81-C56E1A4DD237/94/f2f6067e/NonBodyParameter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Org/OrganizationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Technic/TechnicController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Technic/TechnicCategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/e2/60263ad5/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Technic/TechnicDimensionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Material/ConsumptionMaterialController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Material/MaterialDimensionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/5b/523b084f/Enum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Material/BuildingMaterialCategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Material/BuildingMaterialController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Material/MainMaterialCategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1A963D6B-DB8D-435E-8DCD-C28935E050AD/30/ffdbcc4c/EntityFrameworkQueryableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Material/MainMaterialController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Admin/Material/ConsumptionMaterialCategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Common/FileController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5CC8B804-526D-4211-9CF3-D81B7DA04B97/be/149c46b9/TableAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Common/BaseController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Common/Models/ServiceResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A452F82D-9072-4095-BA37-3E9CC265D5DD/f4/5e0082b2/StringValues.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/32/14c6893e/ConsumesAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/7e/ad22808d/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Configuration/User/UserCreation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Configuration/Filters/AuthFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Configuration/Swagger/AuthorizationHeaderOperationFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Configuration/Middlewares/LogAndExceptionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/CostEstimatorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkMainMaterialController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/BuildingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkBuildingMaterialController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkConsumptionMaterialController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkCategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkWorkerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkBrigadeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkTechnicController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/PhaseController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Hr/WorkerCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Hr/BrigadeCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Hr/PaymentTypeService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Hr/WorkerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Hr/BrigadeService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Hr/Models/BrigadeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Hr/Models/WorkerViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Org/OrganizationService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Org/UserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Org/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Org/Models/OrganizationViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Org/Models/UserViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Org/Models/ChangePasswordModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Auth/IAuthService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Auth/AuthService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Files/FileService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Files/IFileService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Files/Models/FileViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Tools/ServiceException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Tools/UIConstants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Tools/Di.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Tools/Mapper/ViewToDomainProfile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Tools/Mapper/DomainToViewProfile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Technic/TechnicService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Technic/TechnicCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Technic/TechnicDimensionService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Material/ConsumptionMaterialCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Material/ConsumptionMaterialService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Material/MainMaterialService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Material/BuildingMaterialCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Material/BuildingMaterialService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Material/MainMaterialCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Material/MaterialDimensionService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkBuildingMaterialService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/IPhaseService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkConsumptionMaterialService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/IWorkCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkBrigadeService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkMainMaterialService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/IBuildingService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkTechnicService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/IWorkService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkWorkerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/IGetDateRangesService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/BuildingService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkCategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/PhaseService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkCategoryViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/BuildingBaseViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/BuildingViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkWorkerViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkConsumptionMaterialViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/PhaseViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkBrigadeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/DateRangeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkBuildingMaterialViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkTechnicViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkMainMaterialViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IHrDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IAuthDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IStorageDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IBuildingDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IDependedCrudOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/ITechnicDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IMaterialDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/ICrudOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Application/Interfaces/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/CsDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Repository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Tools/Di.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Factory/CsDbContetFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Services/MaterialDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Services/AuthDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Services/StorageDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Services/HrDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Services/TechnicDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Services/BuildingDbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Migrations/CsDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Migrations/20181017180826_resources_coef_default_value.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Migrations/20181017180135_resources_add_coef_and_comment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Persistence/Migrations/20181024193158_add_extra_price_fields.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Common/Tools/TokenGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Common/Tools/Security/CryptoHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Common/Models/ListResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Common/Models/Paging.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Hr/BrigadeCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Hr/Brigade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Hr/WorkerCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Hr/Worker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Hr/PaymentType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Auth/Role.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Auth/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Auth/UserRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Auth/Organization.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Auth/OrganizationRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Auth/Configuration/OrganizationRoleConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Auth/Configuration/UserRoleConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Files/BrigadeFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Files/File.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Files/WorkerFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Files/Configuration/BrigadeFileConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Files/Configuration/WorkerFileConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Common/OrganizationRelation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Technics/TechnicCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Technics/Technic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Technics/TechnicDimension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkBrigade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkConsumptionMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Phase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Work.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkWorker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/BuildingBaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Building.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkBuildingMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkTechnic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkMainMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Configuration/WorkTechnicConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Configuration/WorkWorkerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Configuration/WorkMainMaterialConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Configuration/WorkBrigadeConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Configuration/WorkConsumptionMaterialConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Configuration/WorkBuildingMaterialConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/MainMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/MaterialDimension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/BuildingMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/BuildingMaterialCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/ConsumptionMaterialCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/MainMaterialCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/ConsumptionMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/d9/14fd9b52/Boolean.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/82/3f8157ba/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/560D56F8-376D-4258-A59A-D5478913C777/6a/7107fce3/HttpResponseWritingExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9B9767D-16CD-4FB4-8685-C16F29187B2E/28/ee3842e7/HttpStatusCode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB5BE0C7-4433-425A-AE2A-B70ED6C7054C/28/83c35ada/ApplicationException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1A963D6B-DB8D-435E-8DCD-C28935E050AD/ee/e81f458b/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/560D56F8-376D-4258-A59A-D5478913C777/af/bbd392cb/HttpContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E14BD5A-733B-451F-A522-C72988F72F94/cd/67077cb7/LinkedList`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4B47B422-BC4C-4615-BBDE-BE1DF9B21B0D/3b/1aca3001/ServiceProviderServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51F5E57C-3B16-41FF-921C-58F55F777AF6/a8/e048000e/AuthenticationServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1A963D6B-DB8D-435E-8DCD-C28935E050AD/73/64807e71/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E583682-5CC6-412D-8360-C4C6ADFE4941/65/cd8b5157/IFormFile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C9FEA460-E759-483C-B4A2-1048676EA8E1/da/0d8ea4b8/JwtBearerAppBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/7f/2630ddbe/TypeFilterAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/804D404C-3A3E-4837-8520-654FA957E807/b2/78633ab5/IAuthorizationFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/804D404C-3A3E-4837-8520-654FA957E807/62/34675eb8/ActionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2B9B829-D955-4367-82F8-CEC710ADA7F3/f6/42c0e1aa/IMapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Auth/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Auth/RoleController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Auth/Models/UserLoginModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/324C4ED4-AE6C-4D99-8A17-DA97CA51936D/6d/bbc81a75/CorsPolicyBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Cs.Service/Auth/Models/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4B76029-6335-4DF8-AF81-C56E1A4DD237/70/60297448/Operation.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Hr/BrigadeService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Persistence/Factory/CsDbContetFactory.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/BaseEntity.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Auth/IAuthService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Org/Models/ChangePasswordModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Org/UserService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Common/Tools/Security/CryptoHelper.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Service/Startup.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Service/Auth/Models/UserModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Service/Auth/AuthController.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Buildings/Work.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Service/Admin/SuperAdminController.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Auth/Role.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Auth/AuthService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Service/Admin/ResourceController.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Service/Configuration/User/UserCreation.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Hr/Worker.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Hr/Brigade.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Hr/Models/WorkerViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Persistence/CsDbContext.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Material/BuildingMaterialService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Material/ConsumptionMaterialService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Material/MainMaterialService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Technic/TechnicCategoryService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Technic/TechnicService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Hr/WorkerService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkBuildingMaterialService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkConsumptionMaterialService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkMainMaterialService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkTechnicService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkWorkerService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkBuildingMaterialViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkConsumptionMaterialViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkMainMaterialViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkTechnicViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Tools/Mapper/DomainToViewProfile.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkWorkerViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Materials/BuildingMaterial.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Materials/ConsumptionMaterial.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Materials/MainMaterial.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Technics/Technic.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Buildings/BuildingBaseEntity.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Buildings/Phase.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Buildings/Building.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkCategory.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/BuildingViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/PhaseViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkCategoryViewModel.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkService.cs" />
+        <option value="$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/BuildingController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ConstructionSoft" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="api" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Source/Cs.Service/bin/Debug/netcoreapp2.0/Cs.Service.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source/Cs.Service" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Source/Cs.Service/Cs.Service.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <browser url="http://localhost:5000/swagger" name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" start="true" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1bb2399-44f7-46e8-9b9f-4bce66364c24" name="Default" comment="" />
+      <created>1533382491482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533382491482</updated>
+      <workItem from="1533382493567" duration="5916000" />
+      <workItem from="1533389523871" duration="331000" />
+      <workItem from="1533390670385" duration="2548000" />
+      <workItem from="1533407029367" duration="1285000" />
+      <workItem from="1533412875212" duration="1056000" />
+      <workItem from="1533458684162" duration="4199000" />
+      <workItem from="1533469552132" duration="127000" />
+      <workItem from="1533469701335" duration="315000" />
+      <workItem from="1533470043414" duration="11885000" />
+      <workItem from="1533540591362" duration="2754000" />
+      <workItem from="1533842569211" duration="252000" />
+      <workItem from="1533842868579" duration="52000" />
+      <workItem from="1533843016410" duration="55000" />
+      <workItem from="1533843203187" duration="85000" />
+      <workItem from="1534008877786" duration="1116000" />
+      <workItem from="1534060740587" duration="2089000" />
+      <workItem from="1534065835146" duration="2510000" />
+      <workItem from="1534927581096" duration="26000" />
+      <workItem from="1534930704421" duration="20838000" />
+      <workItem from="1534974983552" duration="83000" />
+      <workItem from="1535014118824" duration="21000" />
+      <workItem from="1535014171463" duration="12254000" />
+      <workItem from="1535051095200" duration="743000" />
+      <workItem from="1535098509116" duration="19253000" />
+      <workItem from="1535191220536" duration="6542000" />
+      <workItem from="1535205873664" duration="3455000" />
+      <workItem from="1535619512684" duration="10088000" />
+      <workItem from="1535651200335" duration="4026000" />
+      <workItem from="1535655609545" duration="1425000" />
+      <workItem from="1535705283200" duration="529000" />
+      <workItem from="1535706333057" duration="871000" />
+      <workItem from="1535708095633" duration="7758000" />
+      <workItem from="1535721461580" duration="2363000" />
+      <workItem from="1535787180318" duration="3186000" />
+      <workItem from="1535798727634" duration="4160000" />
+      <workItem from="1535811839063" duration="658000" />
+      <workItem from="1535812751289" duration="6127000" />
+      <workItem from="1535882939265" duration="9411000" />
+      <workItem from="1536005260418" duration="2203000" />
+      <workItem from="1536079684872" duration="2482000" />
+      <workItem from="1536167009032" duration="1331000" />
+      <workItem from="1536395190960" duration="3692000" />
+      <workItem from="1536685675890" duration="2505000" />
+      <workItem from="1536781334102" duration="598000" />
+      <workItem from="1536861586571" duration="5087000" />
+      <workItem from="1537006751773" duration="8249000" />
+      <workItem from="1537089438686" duration="16407000" />
+      <workItem from="1537265087210" duration="2911000" />
+      <workItem from="1537283085116" duration="842000" />
+      <workItem from="1537300362841" duration="454000" />
+      <workItem from="1537437524061" duration="12863000" />
+      <workItem from="1537621615325" duration="13658000" />
+      <workItem from="1537691412491" duration="7880000" />
+      <workItem from="1537717910060" duration="601000" />
+      <workItem from="1537727638156" duration="6483000" />
+      <workItem from="1537775945479" duration="125000" />
+      <workItem from="1537809923667" duration="1645000" />
+      <workItem from="1539796885797" duration="7411000" />
+      <workItem from="1539889495635" duration="622000" />
+      <workItem from="1540286299814" duration="199000" />
+      <workItem from="1540400739754" duration="3317000" />
+      <workItem from="1540456850606" duration="1807000" />
+      <workItem from="1540488005986" duration="361000" />
+      <workItem from="1540921671964" duration="601000" />
+      <workItem from="1542612822438" duration="164000" />
+      <workItem from="1546601372820" duration="584000" />
+      <workItem from="1546614295479" duration="160000" />
+    </task>
+    <task id="LOCAL-00001" summary="backend: clean architecture initialized">
+      <created>1533389620113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533389620113</updated>
+    </task>
+    <task id="LOCAL-00002" summary="backend: authorization added">
+      <created>1533480825631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533480825631</updated>
+    </task>
+    <task id="LOCAL-00003" summary="backend: refactor">
+      <created>1533585494787</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533585494787</updated>
+    </task>
+    <task id="LOCAL-00004" summary="backend: init">
+      <created>1534066678035</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1534066678035</updated>
+    </task>
+    <task id="LOCAL-00005" summary="backend: init">
+      <created>1534932484041</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534932484041</updated>
+    </task>
+    <task id="LOCAL-00006" summary="backend: cleanup">
+      <created>1534932517033</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534932517033</updated>
+    </task>
+    <task id="LOCAL-00007" summary="backend: cleanup">
+      <created>1534937039029</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534937039029</updated>
+    </task>
+    <task id="LOCAL-00008" summary="backend: technic crud added">
+      <created>1534974722037</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534974722037</updated>
+    </task>
+    <task id="LOCAL-00009" summary="backend: technic crud added">
+      <created>1534975059036</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534975059036</updated>
+    </task>
+    <task id="LOCAL-00010" summary="backend: technic crud finished">
+      <created>1535025831038</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535025831039</updated>
+    </task>
+    <task id="LOCAL-00011" summary="backend: material crud finished">
+      <created>1535043595030</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535043595030</updated>
+    </task>
+    <task id="LOCAL-00012" summary="backend: hr crud finished">
+      <created>1535050477033</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1535050477034</updated>
+    </task>
+    <task id="LOCAL-00013" summary="backend: users and organiation cruds finished">
+      <created>1535121755572</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1535121755572</updated>
+    </task>
+    <task id="LOCAL-00014" summary="backend: users and organiation role selection finished">
+      <created>1535216017226</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535216017226</updated>
+    </task>
+    <task id="LOCAL-00015" summary="backend: refactor, interceptors added, refactored services">
+      <created>1535651056933</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535651056934</updated>
+    </task>
+    <task id="LOCAL-00016" summary="backend: same name validation added">
+      <created>1535653378038</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535653378039</updated>
+    </task>
+    <task id="LOCAL-00017" summary="user authorization optimized">
+      <created>1535654999789</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1535654999789</updated>
+    </task>
+    <task id="LOCAL-00018" summary="backend: lots of stuff">
+      <created>1535655898030</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1535655898030</updated>
+    </task>
+    <task id="LOCAL-00019" summary="backend: lots of stuff">
+      <created>1535655950038</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1535655950038</updated>
+    </task>
+    <task id="LOCAL-00020" summary="backend: refactor">
+      <created>1535657673042</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535657673043</updated>
+    </task>
+    <task id="LOCAL-00021" summary="backend: cost-estimator module added">
+      <created>1535926304042</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535926304042</updated>
+    </task>
+    <task id="LOCAL-00022" summary="backend: cost-estimator module optimized">
+      <created>1536089580047</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536089580047</updated>
+    </task>
+    <task id="LOCAL-00023" summary="backend: db cleanup">
+      <created>1536399091034</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536399091034</updated>
+    </task>
+    <task id="LOCAL-00024" summary="backend: bug fix">
+      <created>1536399769041</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1536399769041</updated>
+    </task>
+    <task id="LOCAL-00025" summary="backend: add resources to work started">
+      <created>1537110394034</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1537110394034</updated>
+    </task>
+    <task id="LOCAL-00026" summary="backend: add consumption material resources to work">
+      <created>1537113956031</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1537113956031</updated>
+    </task>
+    <task id="LOCAL-00027" summary="backend: add main material resources to work">
+      <created>1537116201033</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1537116201033</updated>
+    </task>
+    <task id="LOCAL-00028" summary="backend: add technic resources to work">
+      <created>1537118399027</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1537118399027</updated>
+    </task>
+    <task id="LOCAL-00029" summary="backend: add worker/brigade resources to work">
+      <created>1537120318038</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1537120318038</updated>
+    </task>
+    <task id="LOCAL-00030" summary="backend: optimized">
+      <created>1537131865041</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1537131865041</updated>
+    </task>
+    <task id="LOCAL-00031" summary="backend: optimized">
+      <created>1537270889037</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1537270889037</updated>
+    </task>
+    <task id="LOCAL-00032" summary="backend: file uploader added for brigades">
+      <created>1537477020082</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1537477020082</updated>
+    </task>
+    <task id="LOCAL-00033" summary="backend: file uploader added for workers">
+      <created>1537477749039</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1537477749039</updated>
+    </task>
+    <task id="LOCAL-00034" summary="backend: fixed decimal precision in db">
+      <created>1537477957044</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1537477957044</updated>
+    </task>
+    <task id="LOCAL-00035" summary="backend: organization logo added">
+      <created>1537632700040</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1537632700040</updated>
+    </task>
+    <task id="LOCAL-00036" summary="backend: organization validations added">
+      <created>1537657147038</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1537657147038</updated>
+    </task>
+    <task id="LOCAL-00037" summary="backend: cleanup">
+      <created>1537657811026</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1537657811026</updated>
+    </task>
+    <task id="LOCAL-00038" summary="backend: cleanup and optimization">
+      <created>1537699288046</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1537699288046</updated>
+    </task>
+    <task id="LOCAL-00039" summary="backend: password change added">
+      <created>1537739824058</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1537739824058</updated>
+    </task>
+    <task id="LOCAL-00040" summary="backend: cleanup">
+      <created>1537776057046</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1537776057046</updated>
+    </task>
+    <task id="LOCAL-00041" summary="backend: optimization">
+      <created>1537816174042</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1537816174042</updated>
+    </task>
+    <task id="LOCAL-00042" summary="backend: resource manager role added">
+      <created>1539798797030</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1539798797031</updated>
+    </task>
+    <task id="LOCAL-00043" summary="backend: coeff and commment fields added">
+      <created>1539802461036</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1539802461037</updated>
+    </task>
+    <task id="LOCAL-00044" summary="backend: coeff and commment fields added">
+      <created>1539804694051</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1539804694052</updated>
+    </task>
+    <task id="LOCAL-00045" summary="backend: dimension display added">
+      <created>1539806272044</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1539806272044</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="255634000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21306472" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="bottom" id="NuGet" order="0" sideWeight="0.498779" weight="0.45775402" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="3" sideWeight="0.4993895" weight="0.32834226" />
+      <window_info anchor="bottom" id="REST Client" order="4" weight="0.32834226" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50183153" side_tool="true" weight="0.22352941" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.496337" weight="0.2" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" sideWeight="0.4993895" weight="0.32903227" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.498779" weight="0.1764706" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.4981685" weight="0.22352941" />
+      <window_info anchor="bottom" id="Message" order="10" />
+      <window_info anchor="bottom" id="Find" order="11" weight="0.28342247" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4981685" weight="0.2802139" />
+      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.4993895" weight="0.24705882" />
+      <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.498779" weight="0.32834226" />
+      <window_info anchor="bottom" id="TypeScript" order="17" />
+      <window_info anchor="bottom" id="Messages" order="18" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Errors In Solution" order="1" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+    <MESSAGE value="user authorization optimized" />
+    <MESSAGE value="backend: lots of stuff" />
+    <MESSAGE value="backend: refactor" />
+    <MESSAGE value="backend: cost-estimator module added" />
+    <MESSAGE value="backend: cost-estimator module optimized" />
+    <MESSAGE value="backend: db cleanup" />
+    <MESSAGE value="backend: bug fix" />
+    <MESSAGE value="backend: add resources to work started" />
+    <MESSAGE value="backend: add consumption material resources to work" />
+    <MESSAGE value="backend: add main material resources to work" />
+    <MESSAGE value="backend: add technic resources to work" />
+    <MESSAGE value="backend: add worker/brigade resources to work" />
+    <MESSAGE value="backend: optimized" />
+    <MESSAGE value="backend: file uploader added for brigades" />
+    <MESSAGE value="backend: file uploader added for workers" />
+    <MESSAGE value="backend: fixed decimal precision in db" />
+    <MESSAGE value="backend: organization logo added" />
+    <MESSAGE value="backend: organization validations added" />
+    <MESSAGE value="backend: cleanup and optimization" />
+    <MESSAGE value="backend: password change added" />
+    <MESSAGE value="backend: cleanup" />
+    <MESSAGE value="backend: optimization" />
+    <MESSAGE value="backend: resource manager role added" />
+    <MESSAGE value="backend: coeff and commment fields added" />
+    <MESSAGE value="backend: dimension display added" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend: dimension display added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="result.Items[0].Status.ToString(&quot;G&quot;)" language="C#" custom="RiderImportsList:" />
+        <watch expression="_authService.GetHashCode()" language="C#" custom="RiderImportsList:" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>_authService.GetHashCode()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.Items[0].Status.ToString(&quot;G&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.Items[0].Status.ToString(&quot;X&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.Items[0].Status.ToString(&quot;D&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.Items[0].Status.ToString(&quot;F&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.Items[0].Status.ToString()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.Items[0].Status.GetType()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result[0].status.toString(&quot;G&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Tools/Di.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Hr/Worker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Hr/Brigade.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Tools/Mapper/DomainToViewProfile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1238">
+          <caret line="122" column="68" selection-start-line="122" selection-start-column="68" selection-end-line="122" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkBuildingMaterialService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Material/BuildingMaterialService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Material/BuildingMaterialCategoryService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/ConsumptionMaterial.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/MainMaterial.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Materials/BuildingMaterial.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="79" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Technics/Technic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkBrigadeViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkBuildingMaterialViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkWorkerController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkTechnicController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkMainMaterialController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkConsumptionMaterialController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/DateRangeViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/CostEstimatorController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/PhaseController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkBrigadeController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkBuildingMaterialController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/WorkCategoryController.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkBrigade.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/BuildingBaseViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkConsumptionMaterialViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkMainMaterialViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkTechnicViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Work.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/WorkCategory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Phase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/BuildingBaseEntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Domain/Buildings/Building.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/BuildingViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/PhaseViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkCategoryViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Persistence/Migrations/20181024193158_add_extra_price_fields.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Common/Models/Paging.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkWorkerService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/WorkService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Auth/AuthService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/BuildingService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/Auth/AuthController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/Configuration/Swagger/AuthorizationHeaderOperationFilter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/Configuration/Filters/AuthFilter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/CostEstimator/Buildings/BuildingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Application/Buildings/Models/WorkWorkerViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+          <folding>
+            <marker date="1533498975087" expanded="true" signature="6:63" ph="..." />
+            <marker date="1533498975087" expanded="true" signature="85:406" ph="{...}" />
+            <marker date="1533498975087" expanded="true" signature="112:404" ph="{...}" />
+            <marker date="1533498975087" expanded="true" signature="165:223" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Cs.Service/publish.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

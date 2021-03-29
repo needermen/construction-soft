@@ -1,0 +1,12 @@
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/bin/Release/netcoreapp2.1/Cs.Domain.deps.json
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/bin/Release/netcoreapp2.1/Cs.Domain.dll
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/bin/Release/netcoreapp2.1/Cs.Domain.pdb
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/bin/Release/netcoreapp2.1/Newtonsoft.Json.dll
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/bin/Release/netcoreapp2.1/Newtonsoft.Json.xml
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/obj/Release/netcoreapp2.1/Cs.Domain.csprojAssemblyReference.cache
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/obj/Release/netcoreapp2.1/Cs.Domain.csproj.CoreCompileInputs.cache
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/obj/Release/netcoreapp2.1/Cs.Domain.AssemblyInfoInputs.cache
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/obj/Release/netcoreapp2.1/Cs.Domain.AssemblyInfo.cs
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/obj/Release/netcoreapp2.1/Cs.Domain.csproj.CopyComplete
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/obj/Release/netcoreapp2.1/Cs.Domain.dll
+/Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Domain/obj/Release/netcoreapp2.1/Cs.Domain.pdb

@@ -1,0 +1,20 @@
+div .details{
+  margin-top: 20px;
+}
+
+.ui-panel-title {
+  font-weight: bold;
+}
+
+p-header {
+  font-size: 20px;
+  text-align: center;
+}
+
+p-header span {
+  margin-right: 15%;
+}
+
+p-header button{
+  float: left;
+}

@@ -1,0 +1,50 @@
+2018-09-18T19:09:17.4597500+04:00 0HLGTF2EQSGV1:00000008 [ERR] An exception occurred in the database while iterating the results of a query for context type '"Cs.Persistence.CsDbContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)" (64e2593c)
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Cs.Application.Auth.AuthService.HasRoles(String token, Int32[] roles) in /Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Application/Auth/AuthService.cs:line 79
+   at Cs.Service.Configuration.Filters.AuthFilter.OnAuthorization(AuthorizationFilterContext context) in /Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Service/Configuration/Filters/AuthFilter.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Cs.Service.Configuration.Middlewares.LogAndExceptionHandler.Invoke(HttpContext context) in /Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Service/Configuration/Middlewares/LogAndExceptionHandler.cs:line 31
+2018-09-18T19:09:19.4884670+04:00 0HLGTF2EQSGV1:00000008 [ERR] 0157a5b9-bfab-4e02-ab3c-df5379265b19 (f0817dd6)
+2018-09-18T19:09:19.5053330+04:00 0HLGTF2EQSGV1:00000008 [ERR] http localhost:5000 /api/phase/14/workCategory   (fee79034)
+2018-09-18T19:09:19.5113500+04:00 0HLGTF2EQSGV1:00000008 [ERR] Response: {"success":false,"errorOccured":true,"message":"დაფიქსირდა შეცდომა, შეცდომის კოდი: 0157a5b9-bfab-4e02-ab3c-df5379265b19 გაუგზავნეთ ადმინისტრატორს","data":false} (d8f89def)
+2018-09-18T19:09:19.6261730+04:00 0HLGTF2EQSGV1:00000008 [ERR] System.InvalidOperationException: A second operation started on this context before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Cs.Application.Auth.AuthService.HasRoles(String token, Int32[] roles) in /Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Application/Auth/AuthService.cs:line 79
+   at Cs.Service.Configuration.Filters.AuthFilter.OnAuthorization(AuthorizationFilterContext context) in /Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Service/Configuration/Filters/AuthFilter.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Cs.Service.Configuration.Middlewares.LogAndExceptionHandler.Invoke(HttpContext context) in /Users/needermen/Code/ConstructionSoft/trunk/ConstructionSoft/Backend/Source/Cs.Service/Configuration/Middlewares/LogAndExceptionHandler.cs:line 31 (3633f6a8)

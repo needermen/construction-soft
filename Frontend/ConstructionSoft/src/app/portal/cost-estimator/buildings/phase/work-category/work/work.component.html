@@ -1,0 +1,7 @@
+<app-crud [crudService]="service"
+          [cols]="cols"
+          [detailTitle]="detailTitle"
+          [provideTable]="false"
+          (itemUpdateCompleted)="this.workUpdated.emit()"
+          (userInputed)="onUserInput($event)">
+</app-crud>

@@ -1,0 +1,40 @@
+<h3>ობიექტის ხარჯთაღრიცხვა</h3>
+<br/>
+<p-treeTable [value]="data">
+  <ng-template pTemplate="header">
+    <tr class="kb-row">
+      <th class="kb-cell-xl" rowspan="2">დასახელება</th>
+      <th colspan="3">ხანგძლივობა</th>
+      <th colspan="2">ღირებულება</th>
+      <th colspan="4">რესურსის დეტალები</th>
+    </tr>
+    <tr class="kb-row">
+      <th class="kb-cell-md">დაწყება</th>
+      <th class="kb-cell-md">დასრულება</th>
+      <th class="kb-cell-sm">დღეები</th>
+      <th class="kb-cell-sm">მთლიანი</th>
+      <th class="kb-cell-sm">ნამატი</th>
+      <th class="kb-cell-sm">რაოდ.</th>
+      <th class="kb-cell-md">განზ.</th>
+      <th class="kb-cell-sm">ერთ.ფასი</th>
+      <th class="kb-cell-md">კატეგორია</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+    <tr class="kb-row">
+      <td class="kb-cell-xl">
+        <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
+        {{rowData.name}}
+      </td>
+      <td class="kb-cell-md">{{rowData.startDate | date : 'dd.MM.yyy'}}</td>
+      <td class="kb-cell-md">{{rowData.endDate | date : 'dd.MM.yyy'}}</td>
+      <td class="kb-cell-sm">{{rowData.durationInDays}}</td>
+      <td class="kb-cell-sm">{{rowData.fullPrice > 0 ? (rowData.fullPrice | number : "1.2-2") : '' }}</td>
+      <td class="kb-cell-sm">{{rowData.extraPrice > 0 ? (rowData.extraPrice | number : "1.2-2") : '' }}</td>
+      <td class="kb-cell-sm">{{rowData.resourceCount}}</td>
+      <td class="kb-cell-md">{{rowData.resourceDimension}}</td>
+      <td class="kb-cell-sm">{{rowData.resourcePrice}}</td>
+      <td class="kb-cell-md">{{rowData.resourceCategory}}</td>
+    </tr>
+  </ng-template>
+</p-treeTable>

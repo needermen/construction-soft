@@ -1,0 +1,152 @@
+<div class="row">
+  <div class="col-12">
+    <app-crud [crudService]="service"
+              [title]="title"
+              [cols]="cols"
+              [detailTitle]="detailTitle"
+              [overrideRowSelectEvent]="true"
+              (itemDeleted)="showTree=false;selectedNode=null;"
+              (rowSelected)="onRowSelected($event)">
+    </app-crud>
+  </div>
+
+  <div class="col-12 details" *ngIf="showTree">
+    <p-scrollPanel [style]="{ width:'100%', height: '300px' }">
+      <ng-container>
+        <p-organizationChart [value]="treeNodes" selectionMode="single" [(selection)]="selectedNode"
+                             (onNodeSelect)="onNodeSelect($event)">
+          <ng-template let-node pTemplate="building">
+            <span>{{ building.name }} ( {{ building.statusName }} )</span>
+          </ng-template>
+          <ng-template let-node pTemplate="phase">
+            {{ node.label }}
+          </ng-template>
+          <ng-template let-node pTemplate="workCategory">
+            {{ node.label }}
+          </ng-template>
+          <ng-template let-node pTemplate="work">
+            {{ node.label }}
+          </ng-template>
+          <ng-template let-node pTemplate="addPhase">
+            <i class="pi pi-plus"></i>
+          </ng-template>
+          <ng-template let-node pTemplate="addWorkCategory">
+            <i class="pi pi-plus"></i>
+          </ng-template>
+          <ng-template let-node pTemplate="addWork">
+            <i class="pi pi-plus"></i>
+          </ng-template>
+        </p-organizationChart>
+      </ng-container>
+    </p-scrollPanel>
+  </div>
+
+  <div class="col-12 info" *ngIf="selectedNode != null && selectedNode.type.substring(0,3) != 'add'"
+       style="margin-top: 20px">
+    <p-card>
+      <div class="ui-g">
+        <div class="ui-g-6">
+          <div class="ui-g-7">
+            <label>დასახელება:</label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.name }}</label>
+          </div>
+        </div>
+        <div class="ui-g-6" *ngIf="details?.extraPrice > 0">
+          <div class="ui-g-7">
+            <label>ღირებულება:</label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.price | number : '1.2-2' }} ლარი</label>
+          </div>
+        </div>
+        <div class="ui-g-6" *ngIf="details?.extraPrice > 0">
+          <div class="ui-g-7">
+            <label>ფასნამატი:</label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.extraPrice | number : '1.2-2' }} ლარი</label>
+          </div>
+        </div>
+        <div class="ui-g-6" *ngIf="details?.fullPrice > 0">
+          <div class="ui-g-7">
+            <label>მთლიანი ღირებულება:</label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.fullPrice | number : '1.2-2' }} ლარი</label>
+          </div>
+        </div>
+        <div *ngIf="details?.durationInDays != null" class="ui-g-6">
+          <div class="ui-g-7">
+            <label>დღეების რაოდენობა:</label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.durationInDays }}</label>
+          </div>
+        </div>
+        <div *ngIf="details?.startDate != null && details?.endDate != null" class="ui-g-6">
+          <div class="ui-g-7">
+            <label>დაწყება-დამთავრება:</label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.startDate | date : 'dd/MM/yyyy' }} - {{ details?.endDate | date : 'dd/MM/yyyy' }}</label>
+          </div>
+        </div>
+        <div *ngIf="details?.hasToBeDoneAfterName != null" class="ui-g-6">
+          <div class="ui-g-7">
+            <label>დამოკიდებულია სამუშაოზე:</label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.hasToBeDoneAfterName }}</label>
+          </div>
+        </div>
+        <div *ngIf="details?.executeByContractor" class="ui-g-6">
+          <div class="ui-g-7">
+            <label>კონტრაქტორის დასახელება: </label>
+          </div>
+          <div class="ui-g-5">
+            <label>{{ details?.contractorName }}</label>
+          </div>
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-12">
+          <button type="button" pButton (click)="edit()" label="რედაქტირება"></button>
+          <button type="button" pButton (click)="showWorkResources()" [style.margin-left]="'10px'"
+                  label="რესურსების მართვა" *ngIf="selectedNode.type == 'work'"></button>
+        </div>
+      </div>
+    </p-card>
+  </div>
+
+  <div class="col-12">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <app-work-resources-list *ngIf="selectedNode?.type == 'work'" [id]="selectedNode?.data?.id">
+        </app-work-resources-list>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-8 offset-xl-2 col-lg-12 offset-lg-0" style="margin-top: 20px"
+       *ngIf="selectedNode != null && selectedNode.type.substring(0,3) != 'add' && details?.startDate != null && details?.endDate != null">
+    <p-card>
+      <p-schedule #schedule [events]="events" (onViewRender)="ngOnScheduleInit(schedule)" [header]="header"
+                  [eventLimit]="4" [editable]="true"></p-schedule>
+    </p-card>
+  </div>
+</div>
+
+<app-phase (phaseUpdated)="reloadPhases()">
+</app-phase>
+
+<app-work-category (workCategoryUpdated)="reloadPhases()">
+</app-work-category>
+
+<app-work (workUpdated)="reloadPhases()">
+</app-work>
+
+
+<app-work-resources (closed)="reloadPhases()">
+</app-work-resources>
